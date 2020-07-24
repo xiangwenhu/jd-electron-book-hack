@@ -11,7 +11,7 @@
 
     // 删除指定的监听事件
     function cRemoveListeners(el, eventName) {
-        var allListeners = getEventListeners(document);
+        var allListeners = getEventListeners(el);
         var listeners = allListeners[eventName];
         if (listeners && listeners.length > 0) {
             for (let i = listeners.length - 1; i >= 0; i--) {
